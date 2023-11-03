@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    max-width: 1000px; /* Establece el ancho máximo que desees */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+header {
+    max-width: 1000px; /* Establece el ancho máximo que desees */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    font-size: 24px;
+    background-color: #ffffff;
+    color: #4d4d4d;
+    display: flex;
+    margin-left: 80px; /*mueve el header a la*/
+    padding: 20px;
+    align-items: center;
+    height: 150px;
+     margin-bottom: -100px; /* Ajusta la distancia inferior según tu preferencia */
+    }
+
+header img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 0;
+  
+}
+
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+    font-size: 22px;
+
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #ffffff;
+  
+  
+    font-size: 20px;
+}
+
+
+/* Estilo para las secciones */
+.secciones-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+     
+}
+
+.seccion {
+    flex: 1;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    padding: 20px;
+}
+
+.seccion h2 {
+    margin-top: 0;
+}
+
+footer {
+    color: #000000;
+    text-align: center;
+}
+
+.subscribe input[type="email"]{
+    width: 95.6%;
+    margin-bottom: 10px; /* espacio la entrada y el botón */
+}
+
+.subscribe button {
+    width: 100%; /* Establece el ancho del boton */
+}
+
+
+/* Media query para pantallas medianas (tablet) */
+@media screen and (max-width: 800px) {
+    .container {
+        display: list-item;
+    
+    }
+
+    .content {
+
+        font-size: 20px;
+    }
+
+    .sidebar {
+        background-color: #ffffff;
+        padding: 20px;
+        display: flex;
+        font-size: 18px;
+    }
+
+    .subscribe {
+        padding: 20px;
+        margin-left: 80px; /* Mueve "Suscríbete" hacia la derecha en tablet */
+        width: 1000px;
+    }
+
+  
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+  
+    header {
+        margin-bottom: -100px; 
+        flex-direction: column; 
+        align-items: center; 
+        margin-left: 0; 
+    }
+
+    header img {
+        order: 2; /* Cambia el orden para que la imagen esté después del título */
+       
+    }
+    
+    h1 {
+        order: 1; /* Cambia el orden para que el título esté antes de la imagen */
+    }
+
+
+    .content{
+        font-size: 16px;
+        margin-top: 110px;
+    }
+
+    .sidebar {
+     align-items: center;
+        display: inline;
+        font-size: 16px;
+      
+    }
+
+    .subscribe input[type="email"]{
+        width: 98%;
+        margin-bottom: 10px; /* espacio la entrada y el botón */
+    }
+    .subscribe {
+        padding: 20px;
+        margin-left: 0; /* Mueve "Suscríbete" hacia la derecha en tablet */
+        margin-right: 0;
+        width: auto;
+    }
+    .secciones-container {
+        display: inline;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .seccion{
+        font-size: 16px;
+    }
+}

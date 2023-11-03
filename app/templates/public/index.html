@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+
+    <title>Mi Blog sobre Palomas</title>
+   
+</head>
+<body>
+    <header>
+        <img src="../../static/imgs/perro.png" alt="Imagen de la página">
+        <h1>Mi Blog sobre Palomas</h1>
+    
+
+
+    </header>
+    <div class="container">
+        <div class="content">
+            <p><a href="{{ url_for('index2') }}">Las hermosas palomas y su historia</a><br>
+                Las palomas son aves fascinantes que han tenido un papel importante en la historia de la humanidad.
+            </p>
+            <p><a href="{{ url_for('index3') }}">Cuidado y alimentación de las palomas</a><br>
+                Descubre cómo cuidar y alimentar a estas aves tan especiales.
+            </p>
+            <p><a href="{{ url_for('index4') }}">Curiosidades sobre las palomas</a><br>
+                Aprende datos curiosos y asombrosos sobre las palomas.
+            </p>
+        </div>
+
+        <div class="sidebar">
+            <div>
+                <h2>Acerca de Mí</h2>
+                <p>Bienvenido a mi blog dedicado a las palomas. Aquí encontrarás información interesante sobre estas aves increíbles.</p>
+            </div>
+            <div class="subscribe">
+                <h2>Suscríbete</h2>
+         
+                <input type="email" placeholder="Ingresa tu correo:">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+    <div class="secciones-container">
+        <div class="seccion">
+            <h2>Sección 1</h2>
+            <p>Descubre la historia y el papel cultural de las palomas en diferentes civilizaciones a lo largo del tiempo.</p>
+        </div>
+        <div class="seccion">
+            <h2>Sección 2</h2>
+            <p>Aprende cómo cuidar y alimentar adecuadamente a las palomas, así como los mejores consejos para su bienestar.</p>
+        </div>
+        <div class="seccion">
+            <h2>Sección 3</h2>
+            <p>Explora datos interesantes y curiosidades sobre las palomas que seguramente te sorprenderán.</p>
+        </div>
+    </div>
+    <footer>
+        <h3>Pie de pagina</h3>
+    </footer>
+</body>
+
+</html>
